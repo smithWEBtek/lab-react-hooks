@@ -1,0 +1,13 @@
+.Increment {
+  background-color: green;
+  &:hover {
+    background-color: lightgreen;
+  }
+}
+
+.Decrement {
+  background-color: red;
+  &:hover {
+    background-color: pink;
+  }
+}

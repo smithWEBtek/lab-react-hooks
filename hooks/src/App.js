@@ -1,6 +1,8 @@
 import './App.css';
 import HookUseState from './UseState/hookUseState';
 import HookUseEffect from './UseEffect/hookUseEffect';
+import HookUseEffectCustom from './UseEffect/hookUseEffectCustom';
+import TodoSample from './UseEffect/TodoSample';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <h1>React Hooks</h1>
       <h3>UseState</h3>
       <HookUseState />
+      <HookUseEffectCustom />
+      <TodoSample />
     </div>
   );
 }

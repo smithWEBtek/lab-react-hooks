@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Todo from './Todo';
-// import TodoNew from './TodoNew';
 
 import styles from './hookUseState.module.scss';
 
@@ -8,23 +6,6 @@ function Example() {
   const [count, setCount] = useState(0);
   const [age, setAge] = useState(42);
   const [fruit, setFruit] = useState('banana');
-  const [todos, setTodos] = useState([
-    { text: 'Learn Hooks', url: 'https://reactjs.org/docs/hooks-state.html' },
-    { text: 'Learn Storybook', url: 'https://storybook.js.org/tutorials/intro-to-storybook/' },
-    { text: 'Learn Jest', url: 'https://jestjs.io/docs/tutorial-react' },
-    { text: 'Learn Enzyme', url: 'https://scotch.io/tutorials/testing-react-components-with-enzyme-and-jest' },
-
-  ]);
-
-  const renderedTodos = todos.map((todo, i) => {
-    return (
-      <Todo
-        key={i}
-        title={todo.text}
-        url={todo.url}
-      />
-    )
-  })
 
   return (
     <div>
@@ -46,7 +27,6 @@ function Example() {
 
       <h3>Todos</h3>
       {/* <TodoNew /> */}
-      {renderedTodos}
       <hr />
     </div>
   )
